@@ -5,11 +5,12 @@ let a = 7;
 let b = null;
 let c = 123422222222222222222222222222222222222n;
 let d = true;
-let e = Symbol("I am Symbol");``
+let e = Symbol("I am Symbol");
 let f = undefined;
 
 console.log(a,b,c,d,e,f);
 console.log(typeof(a),typeof(b),typeof(c),typeof(d),typeof(e),typeof(f));
+
 
 
 // Ques : WHY TYPE OF NULL IS OBJECT ?
