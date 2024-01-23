@@ -10,6 +10,7 @@
 
 
 let boxes = document.querySelectorAll(".box");
+
 boxes.forEach((e)=>{
     e.style.backgroundColor = "aqua";
 })
