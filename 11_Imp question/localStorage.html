@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local host</title>
+  </head>
+  <body>
+    <script>
+      if (localStorage.getItem("username")) {
+        let username = localStorage.getItem("username")
+        document.write("Hii ", username);
+      } else {
+        let name = prompt("Enter your name please");
+        localStorage.setItem("username", name);
+        document.write("Hii ", name);
+      }
+    </script>
+  </body>
+</html>
