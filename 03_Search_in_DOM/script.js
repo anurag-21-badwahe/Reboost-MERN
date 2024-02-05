@@ -17,7 +17,7 @@
 const getRandom = () => {
   const color = ["red", "blue", "green", "aqua"];
   let randomSize = Math.floor(1 + color.length * Math.random());
-  return color[randomSize - 1]; // Adjusted to get a valid index
+  return color[randomSize-1]; 
 };
 
 let boxes = document.querySelectorAll(".box");
