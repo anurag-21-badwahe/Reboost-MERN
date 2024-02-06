@@ -1,0 +1,2 @@
+Why express js?
+Express.js is a lightweight, flexible web application framework for Node.js. It offers a simple API, extensive middleware support, and great community resources.
