@@ -38,7 +38,7 @@ const getLikes = () => {
 getUserData()
     .then((user) => getComments(user.id))
     .then((comments) => getReplies(comments.id))
-    .then((replies) => getLikes())
+    .then((replies) => getLikes(replies.text))
     .then(({ user, comments, replies, likes }) => {
         console.log('User:', user);
         console.log('Comments:', comments);

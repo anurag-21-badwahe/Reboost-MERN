@@ -2,7 +2,7 @@ function getData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       let res = {
-        message: "Hurrah ! You are Selected for Software Engineering Role",
+        message: "Hurrah!! You are Selected for Software Engineering Role",
         package: "20+",
       };
       resolve(res);
