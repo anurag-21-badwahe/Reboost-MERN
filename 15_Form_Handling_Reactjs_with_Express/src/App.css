@@ -1,0 +1,48 @@
+.container {
+  min-width: 400px;
+  margin: 200px 200px;
+  padding: 20px;
+  background-color: black;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  color: red;
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+.black {
+  background-color: black;
+  color: #fff;
+  font-size: 37px; /
+}
+
+.input-error {
+  color: red;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
