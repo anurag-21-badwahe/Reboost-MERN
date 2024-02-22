@@ -19,8 +19,10 @@ function App() {
     })
   })
   const onSubmit = async(data) => {
-    await delay(2)
-    console.log(data)
+    let formdata = fetch("http://localhost:3000/")
+    let res = await formdata.text;
+    console.log(data,res)
+    // await delay(2)
   }
 
   return (
