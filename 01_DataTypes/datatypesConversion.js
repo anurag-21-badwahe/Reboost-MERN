@@ -34,6 +34,9 @@ console.log(Array.isArray(newArr)); // Output: true
 const obj = {
  "name" : "Anurag",
 }
+obj.age = "20"
+console.log(obj);
+
 console.log(Array.isArray(obj)); // Output: false
 
 
