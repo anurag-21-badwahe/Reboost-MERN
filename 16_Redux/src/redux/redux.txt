@@ -1,0 +1,8 @@
+1) Store - Is  holds all the data your application uses.
+
+2)Reducer - is manipulates that data when it recieves an action.
+
+3)Action -> What you wanna do, eg: event click
+
+4)Dispatch -> Way how we execute the action. eg: Dispatch the action to the reducer.
+ Then reducer will check what to do and the store gets updated.
