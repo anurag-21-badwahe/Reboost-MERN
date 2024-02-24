@@ -3,9 +3,10 @@
 
 let a = 7;
 let b = null;
-let c = 123422222222222222222222222222222222222n;
+// let c = 123422222222222222222222222222222222222n; // Using the n suffix
+let c= BigInt(12342222222222222222222222222)
 let d = true;
-let e = Symbol("I am Symbol");
+let e = Symbol("I am Symbol");// Symbols in JavaScript create unique identifiers
 let f = undefined;
 
 console.log(a,b,c,d,e,f);
