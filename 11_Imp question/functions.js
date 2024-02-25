@@ -10,7 +10,15 @@
 ------------------------*/
 
 
-//Function stored in a varible
+//Anonymous function
+ /*--------------------
+    console.log(function(a,b){
+        return a*b  // output => 20
+    }(4,5)); 
+---------------------------*/
+
+
+//Anonymous Function Expression
 /*
 const square = function (number) {
     return number * number;
@@ -18,6 +26,15 @@ const square = function (number) {
 const x = square(4); // x gets the value 16
 console.log(x);
 */
+
+//Named Function Expression
+
+// const add = function sum(a,b){
+//     return a+b;
+// }
+
+// console.log(add(5,3));
+
 
 
 //arrow function
@@ -29,3 +46,7 @@ console.log(x);
 
 greet("Anurag")
 --------------*/
+
+
+//Callback function explore in folder
+
