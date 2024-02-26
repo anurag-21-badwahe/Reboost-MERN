@@ -36,23 +36,21 @@ const getLikes = () => {
 
 getUserData()
     .then((user) => {
+        console.log('User:', user);
         return getComments(user.id)
             .then((comments) => {
+                console.log('Comments:', comments);
                 return getReplies(comments.id)
                     .then((replies) => {
+                        console.log('Replies:', replies);
                         return getLikes()
                             .then((likes) => {
+                                console.log('Likes:', likes);
                                 return { user, comments, replies, likes };
                             });
                     });
             });
-    })
-    .then(({ user, comments, replies, likes }) => {
-        console.log('User:', user);
-        console.log('Comments:', comments);
-        console.log('Replies:', replies);
-        console.log('Likes:', likes);
-        console.log(`${user.name} did ${comments.text} on this friend's post and got ${replies.text} replies and ${likes} likes`);
+            
     })
     .catch((error) => {
         console.error('Error:', error);

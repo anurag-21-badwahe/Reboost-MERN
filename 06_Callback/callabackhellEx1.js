@@ -12,7 +12,8 @@ function getCheese(callback){
  function makeDough(cheese,callback){
      setTimeout(function(){
       const dough = cheese + "🫓";
-      console.log("Finally i got the dough ",dough)
+      console.log("Finally i got the dough ",dou
+      )
       callback(dough);
      },2000)
   };
@@ -25,8 +26,8 @@ function getCheese(callback){
      },2000)
   };
 
- getCheese((cheese)=>{
-     makeDough(cheese,(dough)=>{ // here dough is function passing as a parameter
+ getCheese((cheese)=>{ 
+     makeDough(cheese,(dough)=>{ // here dough is function ,passing as a parameter
          bakePizza(dough,(pizza)=>{
              console.log("here is pizza",pizza)
          });

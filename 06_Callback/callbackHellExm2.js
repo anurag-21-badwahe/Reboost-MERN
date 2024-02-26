@@ -29,10 +29,10 @@ const getLikes = ((totLikes)=>{
 
 
 // Callback Hell with arrow functions
-getUserData(user => {
-    getComments(user.id, comments => {
-        getReplies(comments.id, replies => {
-            getLikes(likes => {
+getUserData((user) => {
+    getComments(user.id, (comments)=> {
+        getReplies(comments.id, (replies) => {
+            getLikes((likes) => {
                 console.log('User:', user);
                 console.log('Comments:', comments);
                 console.log('Replies:', replies);
