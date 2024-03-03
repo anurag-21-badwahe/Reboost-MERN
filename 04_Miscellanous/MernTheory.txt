@@ -1,0 +1,38 @@
+Q1)What is package.json in Node.js?
+
+package.json is a metadata file for Node.js projects. It contains various information about the project
+such as its name, version, dependencies, scripts, etc.
+
+*--------------------------------------------------------------------------------------*
+
+Q2)What are dependencies and devDependencies in package.json?
+
+Dependencies are packages required for the application to run, while devDependencies are packages 
+required for development and testing purposes only.
+
+*--------------------------------------------------------------------------------------*
+
+
+Q3)Can you have multiple package.json files in a single project?
+
+No, typically a Node.js project has only one package.json file located at the root directory of 
+the project.
+
+*--------------------------------------------------------------------------------------*
+
+
+Q4)What is the significance of the main field in package.json?
+
+The main field specifies the entry point of the module. When someone imports your
+module, Node.js will look for the file specified in the main field.
+
+*--------------------------------------------------------------------------------------*
+
+
+Q5) Version in package.json
+"version": "^1.0.0": This means any version from 1.0.0 up to, but not including, 2.0.0.
+"version": "~1.0.0": This means any version from 1.0.0 up to, but not including, 1.1.0.
+
+*--------------------------------------------------------------------------------------*
+
+
