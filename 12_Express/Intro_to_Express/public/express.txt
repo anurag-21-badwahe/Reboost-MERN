@@ -1,8 +1,10 @@
 Why express js?
-Express.js is a lightweight, flexible web application framework for Node.js. It offers a simple API, extensive middleware support, and great community resources.
+Express.js is a lightweight, flexible web application framework for Node.js. It offers a simple API, 
+extensive middleware support, and great community resources.
 
 
 
 This express.txt file is inside the public folder 
 
-This is static file written under static folder(public) which can be accessed using middleware(app.use(express.static('public')))
+This is static file written under static folder(public) which can be accessed using middleware
+(app.use(express.static('public')))

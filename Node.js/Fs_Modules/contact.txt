@@ -1,0 +1,2 @@
+This file is created manully and it will be read by file.js using fs_modules
+Contact : +91 5673838768

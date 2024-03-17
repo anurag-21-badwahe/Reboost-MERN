@@ -1,0 +1,47 @@
+
+/****Most Important Question*********/
+Synchronous File Operations:
+Synchronous operations are executed one after another in sequence.
+ When you perform a synchronous file operation, your code waits for
+  that operation to complete before moving on to the next line of code. 
+  In Node.js, synchronous file operations are blocking, meaning they halt
+   the execution of the entire program until the operation is finished. 
+   While this simplifies the code structure, it can lead to performance issues,
+    especially in I/O-bound applications where multiple file operations are performed concurrently.
+
+Example of synchronous file operation in Node.js:
+
+""
+const fs = require('fs');
+
+// Reading a file synchronously
+const data = fs.readFileSync('file.txt', 'utf8');
+console.log(data);
+
+
+""
+
+/***************Question 2 ***********************/
+
+Asynchronous File Operations:
+Asynchronous operations, on the other hand, allow the program to 
+continue executing while the file operation is being processed. 
+In Node.js, asynchronous file operations are non-blocking, meaning 
+that the execution of the program continues without waiting for the
+ file operation to complete. Asynchronous operations use callbacks 
+ or promises to handle the result of the operation once it's finished.
+  This approach is more efficient in I/O-bound applications since it
+   allows multiple operations to be performed concurrently without blocking the event loop.
+
+Example of asynchronous file operation in Node.js:
+
+const fs = require('fs');
+
+// Reading a file asynchronously
+fs.readFile('file.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
