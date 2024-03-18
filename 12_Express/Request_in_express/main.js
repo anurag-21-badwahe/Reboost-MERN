@@ -24,8 +24,8 @@ app.get('/userId/:slug',(req,res)=>{ // app.get,app.post,app.put.....(path,handl
 })
 
 app.post('/', (req, res) => {
-    console.log("This is post request")
     res.send('Hello World Post')
+    console.log("This is post request")
   })
   
 app.listen(port,()=>{
