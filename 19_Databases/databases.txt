@@ -1,0 +1,14 @@
+*------------IMPORTANT THORY QUESTION ON DATABASE--------------------*
+
+Q1) What is no-sql database?
+Ans)NoSQL, or non-relational database, is a database management approach that uses a variety of data models instead of the tabular relations model used in relational databases.
+
+Here are some types of NoSQL databases: Key-value pair, Document-oriented, Column-oriented, Graph-based, and Time series. 
+
+
+Q2) What is sql database?
+Ans) databases that store data in tables organized in rows and columns, similar to a spreadsheet.
+
+Q3)What type of database MongoDB is?
+Ans) Try to answer by yourself
+MongoDB works on BSON format( Binary Javascript Object Notation.).Best for Node Application
