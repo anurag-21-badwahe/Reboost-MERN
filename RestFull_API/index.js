@@ -26,11 +26,21 @@ app.get("/title", (req, res) => {
   return res.json(data);
 });
 
-app.get("/api/title/:id", (req, res) => {
-  const id = req.params.id;
-  const title = title.find((title) => title.id === "Reverse the array");
-  return res.json(title);
-});
+
+// Must do
+app.get("/api/title/:id",(req,res)=>{
+  const reqId = req.params.id;
+  const mydata = data.find((item)=>{
+    return item._id.$oid === reqId;
+  });
+
+  if(!mydata){
+    res.status(404).send("Data not found");
+  }
+  else{
+    res.send(mydata.title);
+  }
+})
 
 app.listen(port, () => {
   console.log(`Server is running successfully of Port : ${port}`);
