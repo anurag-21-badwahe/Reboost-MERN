@@ -1,0 +1,17 @@
+REST API-JSON
+
+ 
+ GET /title - HTML Docs Render
+ GET /api/title - List all title JSON 
+
+ GET /api/title/1 - Get the user with the ID 1
+ GET /api/title/2 - Get the user with the ID 2
+
+Dynamic Path parameters
+GET /api/title/:id - Get the user with the ID varible
+
+ POST /api/title - Create new user
+
+ PATCH /api/title/1 - Edit the user with id 1
+
+ DELETE /api/title/1 - DELETE the user with id 1
