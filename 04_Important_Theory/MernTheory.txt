@@ -36,3 +36,10 @@ Q5) Version in package.json
 *--------------------------------------------------------------------------------------*
 
 
+
+Q6) require vs imports
+"require" in Node.js can be synchronous or asynchronous depending on the module being loaded.
+"import" in JavaScript is always asynchronous, making it more suitable for modern asynchronous programming patterns.
+
+*--------------------------------------------------------------------------------------*
+
